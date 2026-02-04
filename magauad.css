@@ -1,0 +1,191 @@
+/* -------------------- BASE -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  padding: 100px 30px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* --------------- NAVIGATION --------------- */
+header nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  z-index: 999;
+}
+header nav a:hover {
+  color: #4f46e5;
+}
+
+/* ----------------- HERO ----------------- */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 80px 30px;
+}
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 720px;
+}
+.hero .cta {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+  padding: 14px 30px;
+  border-radius: 6px;
+  transition: background .3s, color .3s;
+}
+.hero .cta:hover {
+  background: #4f46e5;
+  color: white;
+}
+.scroll-down {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  opacity: .7;
+  animation: bounce 1.8s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* ------------- SECTION TITLES ------------- */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/* ------------- ABOUT ------------- */
+#about img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  display: block;
+}
+#about p {
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+}
+
+/* ------------- SKILLS ------------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ------------- PROJECTS ------------- */
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+.project-card img {
+  width: 100%;
+  display: block;
+}
+.project-card div {
+  padding: 18px;
+}
+.project-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* ------------- CONTACT ------------- */
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+form button {
+  background: #4f46e5;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s;
+}
+footer {
+  text-align: center;    /* horizontal centering */
+  display: flex;          /* use flexbox */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 60px;            /* optional: gives a consistent footer height */
+}
+/* Nav link default */
+nav .nav-link {
+  font-weight: 400; /* light by default */
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+/* Active nav link */
+nav .nav-link.active {
+  font-weight: 700; /* bold when active */
+  color: #4f46e5;   /* optional highlight color */
+}
+
+form button:hover {
+  background: #3730a3;
+}
