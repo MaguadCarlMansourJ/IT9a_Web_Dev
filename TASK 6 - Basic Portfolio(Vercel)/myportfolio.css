@@ -35,6 +35,7 @@ header nav {
   font-size: 1rem;
   font-weight: 500;
   background: rgba(255,255,255,0.85);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   z-index: 999;
 }
@@ -147,6 +148,17 @@ header nav a:hover {
 }
 
 /* ------------- CONTACT ------------- */
+#contact {
+  text-align: center;
+}
+#contact p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+}
+#contact i {
+  margin-right: 8px;
+  color: #4f46e5;
+}
 form input,
 form textarea {
   width: 100%;
@@ -168,11 +180,11 @@ form button {
   transition: background .3s;
 }
 footer {
-  text-align: center;    /* horizontal centering */
-  display: flex;          /* use flexbox */
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
-  height: 60px;            /* optional: gives a consistent footer height */
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
 }
 /* Nav link default */
 nav .nav-link {
