@@ -32,6 +32,26 @@
       height: 200px;
     }
 
+    .btn {
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .btn-success:hover {
+      background-color: #45a049;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
     /* Mobile (xs) - 1 column */
     @media (max-width: 576px) {
       .container {
@@ -70,6 +90,18 @@
 <body>
 
   <div class="container py-4 py-md-5">
+
+    <div class="row mb-5">
+
+      <div class="col-12 text-center">
+
+        <h1 style="color: white; font-weight: 700; margin-bottom: 0.5rem;">Amazing Animals</h1>
+
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem;">Discover some of the world's most fascinating creatures</p>
+
+      </div>
+
+    </div>
 
     <div class="row g-4 justify-content-center">
 
@@ -184,6 +216,54 @@
             <p class="card-text">A gentle bear known for its love of bamboo and calm nature.</p>
 
             <button class="btn btn-primary">Learn More</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+
+        <div class="card" style="border: 3px solid #FF6B6B; border-radius: 10px; width: 100%;">
+
+          <img src="https://th.bing.com/th/id/OIP.8QY0Z8fX5vZ8Z8Z8Z8Z8Z8Z8Z8?w=256&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7" class="card-img-top" alt="Tiger">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Tiger</h5>
+
+            <h6 class="card-subtitle mb-2 text-muted">Striped Hunter</h6>
+
+            <p class="card-text">Majestic predator known for power, grace, and distinctive orange stripes.</p>
+
+            <button class="btn btn-danger">Learn More</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+
+        <div class="card" style="border: 3px solid #FFD700; border-radius: 10px; width: 100%;">
+
+          <img src="https://th.bing.com/th/id/OIP.giraffe123?w=256&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7" class="card-img-top" alt="Giraffe">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Giraffe</h5>
+
+            <h6 class="card-subtitle mb-2 text-muted">Tallest Land Animal</h6>
+
+            <p class="card-text">With its long neck, this gentle giant can reach the highest tree leaves.</p>
+
+            <button class="btn btn-warning">Learn More</button>
 
           </div>
 
